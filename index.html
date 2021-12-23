@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/highlightAxioms.css">
+</head>
+
+<body>
+    <div class="header">
+        <a class="header-element" href="">Home</a>        
+    </div>
+
+    <div align="center" style="margin-top: 100px">        
+        <div class="block">
+            <img src="img/Mephi-Logo.png">
+            <div id="schemasDiv">
+                <!--There will be added schemas-->
+            </div>
+            <button onClick="addMoreSchemas()">Add more element</button>
+            <button onClick="calculate()">Calculate!</button>            
+            <button onClick="if(confirm('Are you sure you want to clear all?')) document.location.reload()">Clear</button>
+        </div>
+    </div>
+</body>
+
+<script src="js/getStringFromTree.js"></script>
+<script src="js/highlightAxioms.js"></script>
+<script src="js/parseString.js"></script>
+<script src="js/calculate.js"></script>
+<script src="js/addMoreSchemas.js"></script>
+<script src="js/MPalgorithm.js"></script>
+<script src="js/betaAlgorithm.js"></script>
+<script>
+    var count = 0;
+
+    document.addEventListener("DOMContentLoaded", () => {
+        addMoreSchemas();
+    });
+</script>
+
+</html>
